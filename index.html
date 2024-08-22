@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="./asset/logo_encriptador.png" type="image/png">
+    <meta name="description" content="Podrás encriptar tu texto para que nadie lo descifre">
+    <meta name="keywords" content="encriptador, texto">
+    <meta name="author" content="Percy Buendia">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img class="header-logo" src="./asset/Logo.png" alt="">
+        <nav class="header-nav">
+            <li class="header-nav__list">
+                <ul class="header-nav__ul">
+                    <a href="">Modo claro</a>
+                </ul>
+                <ul class="header-nav__ul">
+                    <a href="">Modo oscuro</a>
+                </ul>
+            </li>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="encriptador">
+            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
+            <div class="botones">
+                <button class="boton btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="boton btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="encriptado">
+            <textarea class="mensaje" cols="30"  rows="10"></textarea>
+            <div class="copiar-msj">
+                <button onclick="copiarTexto()" class="boton btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+            <p class="footer-text">Creado por Percy Buendia</p>
+            <a class="footer-text" href="">Linkedin</a>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
