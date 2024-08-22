@@ -81,6 +81,27 @@ body {
         outline: none;
     }
 
+.indicaciones {
+    display: flex;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #0A3871;
+}
+
+.indicaciones-texto span {
+    display: inline-block;
+    margin-right: 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-image: url("./asset/Vector.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .botones, .copiar-msj {
     display: flex;
     flex-direction: column;
@@ -141,8 +162,12 @@ body {
     }
     .encriptado {
         width: 30%;
+        margin-right: 50px;
     }
     .textarea {
+        width: 75%;
+    }
+    .indicaciones {
         width: 75%;
     }
 }

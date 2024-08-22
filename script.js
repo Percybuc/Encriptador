@@ -1,18 +1,19 @@
 const textarea = document.querySelector(".textarea");
 const mensaje = document.querySelector(".mensaje");
-
+const indicacion = document.querySelector(".indicaciones-texto");
 
 
 function btnEncriptar () {
 
     if (/[^a-z\s]/.test(textarea.value)) {
-        textarea.value = "Escriba solo minúsculas sin caracteres especiales";
+        indicacion.value = indicacion.style.color = "#D00000";
     }
     else {
     const textoEncriptado = encriptar(textarea.value);
     mensaje.value = textoEncriptado;
     textarea.value = "";
     mensaje.style.backgroundImage = "none";
+    indicacion.value = indicacion.style.color = "#0A3871";
     }
 }
 
