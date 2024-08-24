@@ -31,26 +31,8 @@ body {
 .header-logo {
     min-width: 80px;
     max-width: 100px;
-    padding: 10px 15px;
-}
-
-.header-nav {
-    margin-right: 15px;
-    color: var(--color-letra);
-}
-
-.header-nav__list {
-    display: flex;
-}
-
-.header-nav__ul {
-    margin-left: 15px;
-    font-size: 1.6rem;
-}
-
-.header-nav__ul a {
-    text-decoration: none;
-    color: var(--color-letra);
+    padding: 20px 15px;
+    margin: 0 auto;
 }
 
 /* ----------------------------------MAIN---------------------------------- */
@@ -88,6 +70,14 @@ body {
         outline: none;
     }
 
+.mensaje {
+    background-image: url("./asset/codificar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none;
+}
+
 .indicaciones {
     display: flex;
     width: 90%;
@@ -124,6 +114,7 @@ body {
     border-radius: 9px;
     border: none;
     cursor: pointer;
+    color: var(--primary-color);
 }
 .boton:hover {
     box-shadow: 0 0 7px 0 #0007;
@@ -147,7 +138,7 @@ body {
     text-decoration: none;
     color: var(--color-letra);
     margin-left: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 @media (min-width: 768px) {
@@ -161,6 +152,9 @@ body {
     }
     .btn-desencriptar {
         margin-left: 15px;
+    }
+    .header-logo {
+        margin: 0;
     }
 }
 

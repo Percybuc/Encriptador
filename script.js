@@ -2,6 +2,7 @@ const textarea = document.querySelector(".textarea");
 const mensaje = document.querySelector(".mensaje");
 const indicacion = document.querySelector(".indicaciones-texto");
 const boton = document.querySelector(".copiar-msj");
+const color = "#0A3871";
 
 
 function btnEncriptar () {
@@ -14,7 +15,8 @@ function btnEncriptar () {
     mensaje.value = textoEncriptado;
     textarea.value = "";
     mensaje.style.backgroundImage = "none";
-    indicacion.value = indicacion.style.color = "#0A3871";
+    mensaje.style.boxShadow = "0px 0px 7px 0px #0007";
+    indicacion.value = indicacion.style.color = color;
     boton = boton.style ="display:flex";
     }
 }
